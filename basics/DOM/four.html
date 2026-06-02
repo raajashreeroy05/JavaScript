@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-four</title>
+</head>
+<body style="background-color: #212121; color: white;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>   
+</body>
+<script>
+    function addLanguage(langName) {
+    const li = document.createElement('li');
+    const addText = document.createTextNode(langName);
+    li.appendChild(addText);
+    const myUl = document.querySelector('.language');
+    myUl.appendChild(li);
+    
+    }
+    addLanguage("Python");
+    addLanguage("Java");
+    addLanguage("C++");
+    addLanguage("TypeScript");
+
+    //Edit
+    const lang_2 = document.querySelector("li:nth-child(2)");
+    // lang_2.innerHTML = "Golang";
+    const newLi = document.createElement('li');
+    newLi.textContent = "Golang";
+    lang_2.replaceWith(newLi);
+
+    //Edit
+    const lang_1 = document.querySelector("li:first-child");
+    lang_1.outerHTML = "<li>Typescript</li>";
+
+    //Delete
+    const last_lang = document.querySelector("li:last-child");
+    last_lang.remove();
+
+
+
+</script>
+</html>

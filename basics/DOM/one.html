@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Learning</title>
+</head>
+<body>
+    <div class="bg-white">
+        <h1 id="dom" class="heading">Document Object Model<span style="display: none;"> test text</span></h1>
+        <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, reiciendis?</h2>
+        <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, reiciendis?</h2>
+        <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, reiciendis?</h2>
+        <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, reiciendis?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <input type="password" name="" id="" placeholder="Enter your password">
+        
+        <ul>
+            <li class="list-item">One</li>
+            <li class="list-item">Two</li>
+            <li class="list-item">Three</li>
+            <li class="list-item">Four</li>
+        </ul>
+    </div>
+</body>
+<script>
+    console.log(document.getElementsById('dom'));
+    console.log(document.getElementById('dom').id);
+    console.log(document.getElementById('dom').getAttribute('id'));
+    console.log(document.getElementById('dom').getAttribute('class'));
+    console.log(document.getElementById('dom').getAttribute('className'));
+    console.log(document.getElementById('dom').setAttribute('class', 'heading-2'));
+    const heading = document.getElementById('dom');
+    console.log(heading);
+    console.log(heading.innerText);
+    console.log(heading.textContent);
+    console.log(heading.innerHTML);    
+    heading.style.backgroundColor = "pink";
+    heading.style.padding = "15px";
+    heading.style.borderRadius = "5px";
+    const myUl = document.querySelector('ul');
+    console.log(myUl);
+    const turnGreen = myUl.querySelector('li');
+    turnGreen.style.color = "green";
+    turnGreen.innerText = "Hello!";
+    const temLiList = document.querySelectorAll('li');
+    console.log(temLiList);
+    temLiList[1].style.backgroundColor = "pink";
+    tempClassList = document.getElementsByClassName('list-item');   // HTMLCollection
+    console.log(tempClassList);   
+    tempClassList[2].style.backgroundColor = "yellow";
+    const convArray =Array.from(tempClassList);
+    console.log(convArray);
+    convArray.forEach(function (li) {
+        li.style.fontSize = "20px";
+    })
+
+
+
+</script>
+</html>
