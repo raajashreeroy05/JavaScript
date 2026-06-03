@@ -45,18 +45,16 @@
     turnGreen.style.color = "green";
     turnGreen.innerText = "Hello!";
     const temLiList = document.querySelectorAll('li');
-    console.log(temLiList);
+    console.log("TempLiList: ", temLiList);
     temLiList[1].style.backgroundColor = "pink";
     tempClassList = document.getElementsByClassName('list-item');   // HTMLCollection
-    console.log(tempClassList);   
+    console.log("TempClassList: ", tempClassList);   
     tempClassList[2].style.backgroundColor = "yellow";
     const convArray =Array.from(tempClassList);
     console.log(convArray);
     convArray.forEach(function (li) {
-        li.style.fontSize = "20px";
+        li.style.fontSize = "25px";
     })
-
-
 
 </script>
 </html>
