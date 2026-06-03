@@ -13,6 +13,7 @@ const regularUser = {
     }
 }
 console.log(regularUser);
+console.log()
 console.log(regularUser.fullName.userFullname);
 console.log()
 
@@ -36,6 +37,7 @@ console.log()
 
 const ob6 = {...ob1, ...ob2}
 console.log(ob6);
+console.log(ob1)
 console.log()
 
 const users = [
