@@ -1,7 +1,7 @@
 const acId = 145263
 let email = "krishav32@gmail.com"
 var acPassword = "krish01av@"
-city = "Udaipur"   //variables can be declared without type but it is not preferred.
+city = "Udaipur"   //variables can be declared without type (let, const, var) but it is not preferred.
 let acState;
 
 // acId = 358454  //no modification is allowed for const type
