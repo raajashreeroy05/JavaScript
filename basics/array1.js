@@ -6,7 +6,7 @@
 
 
 const myArr1 = [1, 2, 3, 4, 5, 6, 7];
-const myArr2 = new Array(1, 2, 3, 4, 5); // this is another way to create an array using the Array constructor
+const myArr2 = new Array(1, 2, 3, 4, 5);      //array using the Array constructor
 console.log(myArr1); // [1, 2, 3, 4, 5, 6, 7]
 console.log();
 console.log(`Element at index 0: ${myArr1[0]}`);
@@ -17,17 +17,17 @@ const dc = ["Superman", "Batman", "Wonder Woman"];
 
 //Array methods
 
-myArr1.push(10)    //Adds an element to the end of the array and returns the new length of the array.
+console.log(myArr1.push(10))    //Adds an element to the end of the array and returns the new length of the array.
 console.log("Push");
 console.log(myArr1); // [1, 2, 3, 4, 5, 6, 7, 10]
 console.log();
 
-console.log(`Popped element: ${myArr2.pop()}`);     //
+console.log(`Popped element: ${myArr2.pop()}`);     //removes and returns the last element of an array
 console.log("Pop");
 console.log(myArr2); // [1, 2, 3, 4]
 console.log();
 
-myArr1.unshift(99);
+console.log(myArr1.unshift(99));     //adds at the first and returns new length of the array
 console.log("Unshift");
 console.log(myArr1); // [99, 1, 2, 3, 4, 5, 6, 7, 10]
 console.log();
@@ -48,7 +48,7 @@ const newArr = myArr2.join();
 console.log("Join");
 console.log(myArr1)
 console.log();
-console.log(newArr); // "1,2,3,4"
+console.log(newArr);      // "1,2,3,4"
 console.log(typeof newArr);
 console.log();
 
@@ -56,10 +56,10 @@ console.log();
 //slice, splice
 console.log("A", myArr1)
 const a1 = myArr1.slice(1, 3)
-console.log(a1) // [1, 2]
+console.log(a1)             // [2, 3]
 console.log("B", myArr1)
 const a2 = myArr1.splice(2, 4) 
-console.log(a2) // [3, 4, 5, 6]
+console.log(a2)            // [3, 4, 5, 6]
 console.log("C", myArr1)
 console.log()
 
