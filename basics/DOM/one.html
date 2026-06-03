@@ -6,7 +6,7 @@
     <title>DOM Learning</title>
 </head>
 <body>
-    <div class="bg-white">
+    <div class="Container">
         <h1 id="dom" class="heading">Document Object Model<span style="display: none;"> test text</span></h1>
         <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, reiciendis?</h2>
         <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, reiciendis?</h2>
@@ -24,8 +24,9 @@
     </div>
 </body>
 <script>
-    console.log(document.getElementsById('dom'));
+    console.log(document.getElementById('dom'));
     console.log(document.getElementById('dom').id);
+    console.log(document.getElementById('dom').className);
     console.log(document.getElementById('dom').getAttribute('id'));
     console.log(document.getElementById('dom').getAttribute('class'));
     console.log(document.getElementById('dom').getAttribute('className'));
