@@ -19,13 +19,15 @@ console.log(allHeros)
 console.log()
 
 const newArr = [1, 2, 3, [4, 5, [1, 6, 9], 7], 10]
+//const newA = [...marvel, ...newArr]
+//console.log(newA)
 const flatArr = newArr.flat(Infinity);
 console.log(flatArr); // [1, 2, 3, 4, 5, 1, 6, 9, 7, 10]    
 console.log()
 
 console.log(Array.isArray("Ryan"))
-console.log(Array.from("Ryan")) // ['R', 'y', 'a', 'n']
-console.log(Array.from({ name: "Ryan" })) // [undefined]  will return an empty array
+console.log(Array.from("Ryan"))        // ['R', 'y', 'a', 'n']
+console.log(Array.from({ name: "Ryan" }))      // [undefined]  will return an empty array
 console.log()
 
 let phy = 98

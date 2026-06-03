@@ -10,14 +10,15 @@ console.log(modified_nums)
 */
 
 const newNums = []
+
 myNums.forEach((num) => {
     if(num>4) {
         newNums.push(num)
     }
 })
 console.log(newNums)
-
 console.log()
+
 
 const programming = [
     {

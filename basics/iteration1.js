@@ -43,11 +43,12 @@ while(x<=10) {
 console.log()
 
 let heros = ["batman", "flash", "superman"]
-arr = 0
+idx = 0
 do {
-    console.log(heros[arr])
-    arr++
-} while(arr<heros.length);
+    console.log(heros[idx])
+    idx++
+} while(idx<heros.length);
+console.log()
 
 let m=1
 do{

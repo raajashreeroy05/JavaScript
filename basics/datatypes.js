@@ -29,7 +29,7 @@ const temp = null   //null means empty
 
 const id1 = Symbol('123')
 const id2 = Symbol('123')
-console.log(id1 === id2)
+console.log(id1 === id2)    //false
 
 const bigNum = 5949651319848955157877423123n
 console.log(typeof bigNum)
@@ -73,6 +73,7 @@ let user1 = {
 let user2 = user1
 
 user2.upi = "userone@ybl"
+console.log(user2)
 console.log(`User 1 upi: ${user1.upi}`)
 console.log(`User 2 upi: ${user2.upi}`)
 console.log("\n")

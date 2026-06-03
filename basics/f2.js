@@ -1,15 +1,15 @@
 function calculateCartPrice(...num1) {      //rest operator ...
     return num1
 }
-
 console.log(calculateCartPrice(100, 250, 999, 600))
 
 
 function calculatePrice(val1, val2, ...num1) {      //rest operator ...
     return num1
 }
-
 console.log(calculatePrice(100, 250, 999, 600))
+console.log()
+
 
 const user = {
     name: "ryan",

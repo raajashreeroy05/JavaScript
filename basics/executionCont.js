@@ -1,6 +1,6 @@
 /*JavaScript Execution Context
 
 Global Execution Context
-Function EC
+Function Execution Context
 Eval Execution Context
 */
